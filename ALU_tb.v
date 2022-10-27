@@ -1,9 +1,8 @@
 //ALU_tb.v test bench for ALU
-//
 module ALU_tb;
 	reg[3:0] in;
-	reg [31:0] a,b;
-	wire [31:0] out;
+	reg [7:0] a,b;
+	wire [7:0] out;
 
         // duration for each bit = 20 * timescale = 20 * 1 ns  = 20ns
         localparam period = 20;  
@@ -13,7 +12,8 @@ module ALU_tb;
      $dumpfile("ALU.vcd");
      $dumpvars(0,UUT);
 
-// Note : For most gates I will do a =1, b= 0 but will not waste time with a = 0, b=1 
+// Note : For most gates I will do a =1, b= 0 
+// but will not waste time with a = 0, b=1 
 // It only makes sense to do it for a - b or a < b
 	    // a and b
 	    a = 0;
