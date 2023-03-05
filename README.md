@@ -1,6 +1,8 @@
 # SomeVerilogLogicGates
 
-Some logic gates written in verilog with a prospective test bench for each.
+Some logic gates written in verilog with a test bench for each.
+
+Gates so far: 
 
 * Half-Adder
 * ALU
